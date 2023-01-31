@@ -1,0 +1,476 @@
+local NhFPS = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Background = Instance.new("ImageLabel")
+local Start = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Warning = Instance.new("TextLabel")
+local FPS = Instance.new("TextLabel")
+local Up = Instance.new("Frame")
+local Minimize = Instance.new("TextButton")
+local Minimize_2 = Instance.new("ImageLabel")
+local Close = Instance.new("TextButton")
+local Close_2 = Instance.new("ImageLabel")
+local Enlarge = Instance.new("TextButton")
+local Minimize_3 = Instance.new("ImageLabel")
+local FPS_2 = Instance.new("TextLabel")
+local FPS_3 = Instance.new("TextLabel")
+local CloseConfirmation = Instance.new("Frame")
+local Txt = Instance.new("TextLabel")
+local Yes = Instance.new("TextButton")
+local Shadow = Instance.new("Frame")
+local txt = Instance.new("TextLabel")
+local No = Instance.new("TextButton")
+local Shadow_2 = Instance.new("Frame")
+local txt_2 = Instance.new("TextLabel")
+local fps_label = Instance.new("TextLabel")
+
+--Properties:
+
+NhFPS.Name = "NhFPS+"
+NhFPS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+NhFPS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = NhFPS
+Frame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Frame.Position = UDim2.new(0.2103443, 0, 0.0421686769, 0)
+Frame.Size = UDim2.new(0, 775, 0, 456)
+
+Background.Name = "Background"
+Background.Parent = Frame
+Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background.BackgroundTransparency = 1.000
+Background.Position = UDim2.new(0.236103043, 0, 0.0855263174, 0)
+Background.Size = UDim2.new(0, 592, 0, 417)
+Background.Image = "rbxassetid://3899340539"
+Background.ImageTransparency = 0.700
+
+Start.Name = "Start"
+Start.Parent = Frame
+Start.AnchorPoint = Vector2.new(1, 0)
+Start.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
+Start.BorderSizePixel = 0
+Start.Position = UDim2.new(0.797563612, 0, 0.879121661, 0)
+Start.Size = UDim2.new(0, 285, 0, 39)
+Start.ZIndex = 2
+Start.Font = Enum.Font.GothamMedium
+Start.Text = ""
+Start.TextColor3 = Color3.fromRGB(255, 255, 255)
+Start.TextScaled = true
+Start.TextSize = 14.000
+Start.TextWrapped = true
+
+TextLabel.Parent = Start
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.496783584, 0, 0.492708445, 0)
+TextLabel.Size = UDim2.new(1, -20, 1, -20)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "Start"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Warning.Name = "Warning"
+Warning.Parent = Frame
+Warning.AnchorPoint = Vector2.new(0.5, 0.5)
+Warning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warning.BackgroundTransparency = 1.000
+Warning.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Warning.BorderSizePixel = 0
+Warning.Position = UDim2.new(0.612838626, 0, 0.182552695, 0)
+Warning.Size = UDim2.new(0.656570554, -20, 0.193256572, -20)
+Warning.ZIndex = 2
+Warning.Font = Enum.Font.GothamMedium
+Warning.Text = "This service does not guarantee %100 optimization on your roblox, it only disables graphics, increases fps and lowers ping."
+Warning.TextColor3 = Color3.fromRGB(255, 255, 255)
+Warning.TextScaled = true
+Warning.TextSize = 14.000
+Warning.TextTransparency = 0.700
+Warning.TextWrapped = true
+
+FPS.Name = "FPS"
+FPS.Parent = Frame
+FPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPS.BackgroundTransparency = 1.000
+FPS.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FPS.Position = UDim2.new(0.245081514, 0, 0.966821849, 0)
+FPS.Size = UDim2.new(0, 48, 0, 15)
+FPS.Font = Enum.Font.Unknown
+FPS.Text = "1.0.0v"
+FPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPS.TextScaled = true
+FPS.TextSize = 14.000
+FPS.TextWrapped = true
+
+Up.Name = "Up"
+Up.Parent = NhFPS
+Up.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Up.BorderSizePixel = 0
+Up.Position = UDim2.new(0.2103443, 0, 0.0421686731, 0)
+Up.Size = UDim2.new(0, 775, 0, 39)
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Up
+Minimize.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+Minimize.BackgroundTransparency = 1.000
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.88516134, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 44, 0, 39)
+Minimize.Font = Enum.Font.SourceSans
+Minimize.Text = ""
+Minimize.TextColor3 = Color3.fromRGB(0, 0, 0)
+Minimize.TextSize = 14.000
+
+Minimize_2.Name = "Minimize"
+Minimize_2.Parent = Minimize
+Minimize_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize_2.BackgroundTransparency = 1.000
+Minimize_2.Position = UDim2.new(0.0454545468, 0, 0, 0)
+Minimize_2.Size = UDim2.new(0, 39, 0, 35)
+Minimize_2.Image = "rbxassetid://8874551390"
+Minimize_2.ScaleType = Enum.ScaleType.Fit
+
+Close.Name = "Close"
+Close.Parent = Up
+Close.BackgroundColor3 = Color3.fromRGB(218, 68, 68)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.941935539, 0, 0, 0)
+Close.Size = UDim2.new(0, 44, 0, 39)
+Close.Font = Enum.Font.SourceSans
+Close.Text = ""
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+Close_2.Name = "Close"
+Close_2.Parent = Close
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.BackgroundTransparency = 1.000
+Close_2.Position = UDim2.new(0.181818187, 0, 0.153846055, 0)
+Close_2.Size = UDim2.new(0, 30, 0, 25)
+Close_2.Image = "rbxassetid://10002373478"
+
+Enlarge.Name = "Enlarge"
+Enlarge.Parent = Up
+Enlarge.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+Enlarge.BackgroundTransparency = 1.000
+Enlarge.BorderSizePixel = 0
+Enlarge.Position = UDim2.new(0.88516134, 0, 0, 0)
+Enlarge.Size = UDim2.new(0, 44, 0, 39)
+Enlarge.Visible = false
+Enlarge.Font = Enum.Font.SourceSans
+Enlarge.Text = ""
+Enlarge.TextColor3 = Color3.fromRGB(0, 0, 0)
+Enlarge.TextSize = 14.000
+
+Minimize_3.Name = "Minimize"
+Minimize_3.Parent = Enlarge
+Minimize_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize_3.BackgroundTransparency = 1.000
+Minimize_3.Position = UDim2.new(0.0454545468, 0, 0, 0)
+Minimize_3.Size = UDim2.new(0, 39, 0, 35)
+Minimize_3.Image = "rbxassetid://8874551390"
+Minimize_3.ScaleType = Enum.ScaleType.Fit
+
+FPS_2.Name = "FPS"
+FPS_2.Parent = Up
+FPS_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPS_2.BackgroundTransparency = 1.000
+FPS_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FPS_2.Position = UDim2.new(0.0149626434, 0, 0.161897779, 0)
+FPS_2.Size = UDim2.new(0, 73, 0, 25)
+FPS_2.Font = Enum.Font.Unknown
+FPS_2.Text = "NhFPS"
+FPS_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPS_2.TextScaled = true
+FPS_2.TextSize = 14.000
+FPS_2.TextWrapped = true
+
+FPS_3.Name = "FPS"
+FPS_3.Parent = Up
+FPS_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPS_3.BackgroundTransparency = 1.000
+FPS_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FPS_3.Position = UDim2.new(0.108850569, 0, 0.161897779, 0)
+FPS_3.Size = UDim2.new(0, 14, 0, 25)
+FPS_3.Font = Enum.Font.Unknown
+FPS_3.Text = "+"
+FPS_3.TextColor3 = Color3.fromRGB(170, 0, 0)
+FPS_3.TextScaled = true
+FPS_3.TextSize = 14.000
+FPS_3.TextWrapped = true
+
+CloseConfirmation.Name = "CloseConfirmation"
+CloseConfirmation.Parent = NhFPS
+CloseConfirmation.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+CloseConfirmation.BorderSizePixel = 0
+CloseConfirmation.Position = UDim2.new(0.519426286, 0, 0.311244994, 0)
+CloseConfirmation.Size = UDim2.new(0, 301, 0, 188)
+CloseConfirmation.Visible = false
+
+Txt.Name = "Txt"
+Txt.Parent = CloseConfirmation
+Txt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Txt.BackgroundTransparency = 1.000
+Txt.Position = UDim2.new(0.056478411, 0, 0.212765962, 0)
+Txt.Size = UDim2.new(0, 265, 0, 50)
+Txt.Font = Enum.Font.Roboto
+Txt.Text = "Are you sure you want to close?"
+Txt.TextColor3 = Color3.fromRGB(255, 255, 255)
+Txt.TextScaled = true
+Txt.TextSize = 14.000
+Txt.TextWrapped = true
+
+Yes.Name = "Yes"
+Yes.Parent = CloseConfirmation
+Yes.AnchorPoint = Vector2.new(1, 0)
+Yes.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
+Yes.BorderSizePixel = 0
+Yes.Position = UDim2.new(0.428770751, 0, 0.590574563, 0)
+Yes.Size = UDim2.new(0, 112, 0, 30)
+Yes.ZIndex = 2
+Yes.Font = Enum.Font.GothamMedium
+Yes.Text = ""
+Yes.TextColor3 = Color3.fromRGB(255, 255, 255)
+Yes.TextScaled = true
+Yes.TextSize = 14.000
+Yes.TextWrapped = true
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Yes
+Shadow.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+txt.Name = "txt"
+txt.Parent = Yes
+txt.AnchorPoint = Vector2.new(0.5, 0.5)
+txt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+txt.BackgroundTransparency = 1.000
+txt.BorderColor3 = Color3.fromRGB(27, 42, 53)
+txt.BorderSizePixel = 0
+txt.Position = UDim2.new(0.498365998, 0, 0.561110437, 0)
+txt.Size = UDim2.new(1, -20, 1.3888886, -20)
+txt.ZIndex = 2
+txt.Font = Enum.Font.GothamMedium
+txt.Text = "Yes"
+txt.TextColor3 = Color3.fromRGB(0, 0, 0)
+txt.TextScaled = true
+txt.TextSize = 14.000
+txt.TextWrapped = true
+
+No.Name = "No"
+No.Parent = CloseConfirmation
+No.AnchorPoint = Vector2.new(1, 0)
+No.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
+No.BorderSizePixel = 0
+No.Position = UDim2.new(0.933754086, 0, 0.590574563, 0)
+No.Size = UDim2.new(0, 112, 0, 30)
+No.ZIndex = 2
+No.Font = Enum.Font.GothamMedium
+No.Text = ""
+No.TextColor3 = Color3.fromRGB(255, 255, 255)
+No.TextScaled = true
+No.TextSize = 14.000
+No.TextWrapped = true
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = No
+Shadow_2.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+
+txt_2.Name = "txt"
+txt_2.Parent = No
+txt_2.AnchorPoint = Vector2.new(0.5, 0.5)
+txt_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+txt_2.BackgroundTransparency = 1.000
+txt_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+txt_2.BorderSizePixel = 0
+txt_2.Position = UDim2.new(0.498365998, 0, 0.561110437, 0)
+txt_2.Size = UDim2.new(1, -20, 1.3888886, -20)
+txt_2.ZIndex = 2
+txt_2.Font = Enum.Font.GothamMedium
+txt_2.Text = "No"
+txt_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+txt_2.TextScaled = true
+txt_2.TextSize = 14.000
+txt_2.TextWrapped = true
+
+fps_label.Name = "fps_label"
+fps_label.Parent = NhFPS
+fps_label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fps_label.BackgroundTransparency = 1.000
+fps_label.Position = UDim2.new(0.00792965293, 0, 0.0183127522, 0)
+fps_label.Size = UDim2.new(0.258660465, 0, 0.0358803421, 0)
+fps_label.Visible = false
+fps_label.Font = Enum.Font.SourceSans
+fps_label.Text = "0 FPS"
+fps_label.TextColor3 = Color3.fromRGB(255, 255, 255)
+fps_label.TextScaled = true
+fps_label.TextSize = 14.000
+fps_label.TextStrokeTransparency = 0.500
+fps_label.TextWrapped = true
+fps_label.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function UZIZPQX_fake_script() -- Start.Optimization 
+	local script = Instance.new('LocalScript', Start)
+
+	 if nil then repeat until nil script:Destroy() end
+	
+	while true do
+		wait()
+		if not script:IsDescendantOf(game.Players.LocalPlayer.Backpack) then
+			break
+		end
+	end
+	local on = false
+	local done = true 
+		
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.TextLabel.Text = "Running.."
+		wait(5)
+		script.Parent.Parent.Parent.fps_label.Visible = true
+		script.Parent.TextLabel.Text = "Stop"
+		script.Parent.BackgroundColor3 = Color3.new(0.854902, 0.266667, 0.266667)
+		on = not on
+		if not done then return end 
+		done = false 
+		if on then 
+			for _, Parts in pairs(workspace:GetDescendants()) do 
+				if Parts:IsA("Part") then 
+					if not Parts:FindFirstChild("SurfaceType") then 
+						local SurfaceType = Instance.new("StringValue",Parts)
+						SurfaceType.Name = "SurfaceType"
+						SurfaceType.Value = tostring(Parts.Material) 
+					end
+					Parts.Material  = "SmoothPlastic"
+				end
+			end
+		else 
+			script.Parent.TextLabel.Text = "Stopping.."
+			wait(5)
+			script.Parent.TextLabel.Text = "Start"
+			script.Parent.Parent.Parent.fps_label.Visible = false
+			script.Parent.BackgroundColor3 = Color3.new(0.866667, 0.866667, 0.866667)
+			for _, Parts in pairs(workspace:GetDescendants()) do 
+				if Parts:IsA("Part") and Parts:FindFirstChild("SurfaceType") then 
+					Parts.Material  = string.sub(Parts.SurfaceType.Value,15) 
+				end
+			end	
+		end
+		done = true 
+	end)
+end
+coroutine.wrap(UZIZPQX_fake_script)()
+local function RCEVFL_fake_script() -- Up.Up 
+	local script = Instance.new('LocalScript', Up)
+
+	local Minimize = script.Parent.Minimize
+	local Close = script.Parent.Close
+	local Enlarge = script.Parent.Enlarge
+	
+	-- Close
+	
+	Close.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CloseConfirmation.Visible = true
+	end)
+	
+	-- Minimize
+	
+	Minimize.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = false
+		script.Parent.Parent.Left.Visible = false
+		Enlarge.Visible = true
+		Minimize.Visible = false
+	end)
+	
+	Enlarge.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Parent.Left.Visible = true
+		Enlarge.Visible = false
+		Minimize.Visible = true
+	end)
+	
+	-- Close background
+	
+	Close.MouseEnter:Connect(function()
+		Close.BackgroundTransparency = 0
+	end)
+	
+	Close.MouseLeave:Connect(function()
+		Close.BackgroundTransparency = 1
+	end)
+	
+	-- Minimize background
+	
+	Minimize.MouseEnter:Connect(function()
+		Minimize.BackgroundTransparency = 0
+	end)
+	
+	Minimize.MouseLeave:Connect(function()
+		Minimize.BackgroundTransparency = 1
+	end)
+	
+	-- Enlarge background
+	
+	Enlarge.MouseEnter:Connect(function()
+		Enlarge.BackgroundTransparency = 0
+	end)
+	
+	Enlarge.MouseLeave:Connect(function()
+		Enlarge.BackgroundTransparency = 1
+	end)
+	
+	
+end
+coroutine.wrap(RCEVFL_fake_script)()
+local function RPLQCKF_fake_script() -- CloseConfirmation.CloseConfirmation 
+	local script = Instance.new('LocalScript', CloseConfirmation)
+
+	local Yes = script.Parent.Yes
+	local No = script.Parent.No
+	
+	Yes.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+	
+	No.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(RPLQCKF_fake_script)()
+local function YZLGOB_fake_script() -- NhFPS.counter_main 
+	local script = Instance.new('LocalScript', NhFPS)
+
+	local services = {
+		["run_service"] = game:GetService("RunService"),
+	}
+	
+	local gui = script.Parent
+	local fps_label = gui:WaitForChild("fps_label")
+	local update_rate = gui:WaitForChild("update_rate").Value
+	update_rate = (update_rate < 0.25 or update_rate > 2) and 1 or update_rate
+	
+	local frames_rendered = 0
+	local last_update = tick() - update_rate
+	local multiplier = 1 / update_rate
+	services["run_service"].RenderStepped:Connect(
+		function()
+			if tick() - last_update >= update_rate then
+				fps_label.Text = tostring(math.round(frames_rendered * multiplier)).. " FPS"
+				frames_rendered = 0; last_update = tick()
+			else
+				frames_rendered += 1
+			end
+		end
+	)
+end
+coroutine.wrap(YZLGOB_fake_script)()
